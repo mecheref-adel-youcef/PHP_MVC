@@ -7,7 +7,6 @@ class ArticleManager extends Manager
     {
         $db = parent::dbConnect();
         $req = $db->query('SELECT id, title, content, article_date,categorie FROM article ORDER BY article_date ASC');
-
         return $req;
     }
 

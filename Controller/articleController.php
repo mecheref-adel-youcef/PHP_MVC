@@ -8,7 +8,6 @@ function listArticles()
 {
     $articleManager = new ArticleManager(); // Création d'un objet
     $articles = $articleManager->getArticles(); // Appel d'une fonction de cet objet
-
     require('View/listArticlesView.php');
 }
 
